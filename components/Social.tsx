@@ -7,7 +7,12 @@ const socials = [
     path: "https://www.linkedin.com/in/ranjeet-singh-rawat/",
   },
 ];
-const Social = ({ containerStyles, iconStyles }) => {
+type SocialProps = {
+  containerStyles: string;
+  iconStyles: string;
+};
+
+const Social = ({ containerStyles, iconStyles }: SocialProps) => {
   return (
     <div className={containerStyles}>
       {socials.map((item, index) => {
