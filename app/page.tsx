@@ -1,9 +1,23 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import React from "react";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 const Home = () => {
+    // Logic to download the file
+    const handleDownload = () => {
+      // Create a new anchor element
+      const link = document.createElement("a");
+      // Set the href attribute to the file URL
+      link.href = "/assets/Ranjeet Singh Rawat Resume.pdf";
+      // Set the download attribute to specify the file name
+      link.download = "Ranjeet Singh Rawat Resume.pdf";
+      // Programmatically click the link to trigger the download
+      link.click();
+    };
+
+
   return (
     <section className="h-full">
       <div className=" container mx-auto h-full">
@@ -23,6 +37,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
               >
                 <span>Download CV</span>
                 <FiDownload className=" text-xl" />
@@ -40,7 +55,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section>    
   );
 };
 

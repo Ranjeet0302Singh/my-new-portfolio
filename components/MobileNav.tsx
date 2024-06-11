@@ -6,7 +6,7 @@ import { CiMenuFries } from "react-icons/ci";
 
 const links = [
   { path: "/", name: "Home" },
-  { path: "/services", name: "services" },
+  // { path: "/services", name: "services" },
   { path: "/resume", name: "resume" },
   { path: "/work", name: "work" },
   { path: "/contact", name: "contact" },
@@ -19,7 +19,7 @@ const MobileNav = () => {
         <CiMenuFries className=" text-[32px] text-accent " />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <div className=" mt-32 mb-40 text-center text-2xl">
+        <div className=" mt-32 mb-24 text-center text-2xl">
           <Link href="/">
             <h1 className=" text-4xl font-semibold">
               Ranjeet<span className=" text-accent">.</span>
