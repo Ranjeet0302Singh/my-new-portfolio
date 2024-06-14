@@ -10,9 +10,9 @@ const Home = () => {
       // Create a new anchor element
       const link = document.createElement("a");
       // Set the href attribute to the file URL
-      link.href = "/assets/Ranjeet Singh Rawat Resume.pdf";
+      link.href = "/assets/Ranjeet_Singh_Resume.pdf";
       // Set the download attribute to specify the file name
-      link.download = "Ranjeet Singh Rawat Resume.pdf";
+      link.download = "Ranjeet_Singh_Resume.pdf";
       // Programmatically click the link to trigger the download
       link.click();
     };
