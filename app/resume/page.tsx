@@ -17,7 +17,7 @@ const about = {
   info: [
     { fieldName: "Name", fieldValue: "Ranjeet Singh Rawat" },
     { fieldName: "Phone", fieldValue: "+91-6265410421" },
-    { fieldName: "Experience", fieldValue: "2 years" },
+    { fieldName: "Experience", fieldValue: "1 years" },
     { fieldName: "Email", fieldValue: "ranjeet843507@gmail.com" },
     { fieldName: "Freelance", fieldValue: "Available" },
     { fieldName: "Languages", fieldValue: "English, Hindi" },
