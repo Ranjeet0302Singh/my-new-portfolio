@@ -40,7 +40,7 @@ const projects = [
     category: "NextJs weather Forecast Site",
     title: "Project 2",
     description:
-      "A Next.js application that uses Aeternity UI and the OpenWeather API to provide current weather information based on the user’s location.",
+      "A Next.js application that uses aceternity ui  and the OpenWeather API to provide current weather information based on the user’s location.",
     stack: [
       { name: "NextJs" },
       { name: "Tailwind CSS" },
