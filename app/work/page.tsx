@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import {  useState } from "react";
+import { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -21,43 +21,94 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "NextJs Full Stack ",
     title: "Project 1",
-    description: "This is a project description",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
+    description:
+      "An AI-driven image SaaS platform developed with Next.js, TypeScript, MongoDB, and several other modern technologies, offering advanced image processing features and a secure payment infrastructure.",
+    stack: [
+      { name: "NextJs" },
+      { name: "Tailwind CSS" },
+      { name: "NodeJs" },
+      { name: "MongoDB" },
+    ],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://imagica.vercel.app/",
+    github: "https://github.com/Ranjeet0302Singh/imagica-2",
   },
   {
     num: "02",
-    category: "frontend",
+    category: "NextJs weather Forecast Site",
     title: "Project 2",
-    description: "This is a project description",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
+    description:
+      "A Next.js application that uses Aeternity UI and the OpenWeather API to provide current weather information based on the user’s location.",
+    stack: [
+      { name: "NextJs" },
+      { name: "Tailwind CSS" },
+      { name: "JavaScript" },
+    ],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "https://nextjs-weather-forecast-app.vercel.app/",
+    github: "https://github.com/Ranjeet0302Singh/weather-app",
   },
   {
     num: "03",
-    category: "frontend",
+    category: "Sports Streaming Website",
     title: "Project 3",
-    description: "This is a project description",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
+    description:
+      "A React.js and PHP-based website providing real-time updates, live scores, and detailed match statistics.",
+    stack: [{ name: "ReactJs" }, { name: "Javascript" }, { name: "PHP" }],
     image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    live: "https://thecricketbaadshah.com/",
+    github: "https://github.com/Ranjeet0302Singh/streaming-site",
   },
   {
     num: "04",
-    category: "frontend",
+    category: "Frontend Website",
     title: "Project 4",
-    description: "This is a project description",
+    description:
+      "A website of the institute to showcase their work and experience",
     stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    image: "/assets/work/thumb4.png",
+    live: "https://eduweb-ashy.vercel.app/",
+    github: "https://github.com/Ranjeet0302Singh/EDUWEB",
+  },
+  {
+    num: "05",
+    category: "Tic Tac Toe Game",
+    title: "Project 5",
+    description:
+      "A website of the institute to showcase their work and experience",
+    stack: [{ name: "React" }, { name: "CSS" }, { name: "JavaScript" }],
+    image: "/assets/work/thumb5.png",
+    live: "https://tic-tac-toe-psi-two-46.vercel.app/",
+    github: "https://github.com/Ranjeet0302Singh/tic-tac-toe",
+  },
+  {
+    num: "06",
+    category: "Textutils ",
+    title: "Project 6",
+    description:
+      "TextUtils is the site where you can do some experiments on the text based on your requirement",
+    stack: [{ name: "React" }, { name: "Bootstrap" }, { name: "JavaScript" }],
+    image: "/assets/work/thumb6.png",
+    live: "https://textutils-reactjs-webapp.netlify.app/",
+    github: "https://github.com/Ranjeet0302Singh/textutils",
+  },
+  {
+    num: "07",
+    category: "Online Learning and Teaching Platform",
+    title: "Project 7",
+    description:
+      "Built using the MERN stack, featuring subscription-based access to video courses, secure payment gateways, and an intuitive user dashboard.",
+    stack: [
+      { name: "React" },
+      { name: "NodeJs" },
+      { name: "ExpressJs" },
+      { name: "MongoDB" },
+    ],
+    image: "/assets/work/thumb7.png",
+    live: "https://github.com/Ranjeet0302Singh/edtech-frontend",
+    github: "https://github.com/Ranjeet0302Singh/edtech-backend",
   },
 ];
 
@@ -101,7 +152,7 @@ const work = () => {
               </ul>
               <div className=" border border-white/20"></div>
               <div className=" flex items-center gap-4">
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className=" w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -116,7 +167,7 @@ const work = () => {
                   </TooltipProvider>
                 </Link>
 
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className=" w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -156,7 +207,9 @@ const work = () => {
               })}
               <WorkSliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transtition-all" iconsStyles={""}              />
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transtition-all"
+                iconsStyles={""}
+              />
             </Swiper>
           </div>
         </div>
