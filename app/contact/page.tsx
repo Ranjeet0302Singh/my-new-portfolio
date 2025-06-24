@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
         <div className="flex mt-16  md:flex-row flex-col justify-around items-center gap-6 ">
           <p className="md:text-base text-sm md:font-normal font-light">
-            Copyright © 2024 Ranjeet Singh Rawat
+            Made by Ranjeet Singh Rawat
           </p>
 
           <div>
