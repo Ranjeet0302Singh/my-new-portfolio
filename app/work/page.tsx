@@ -132,7 +132,7 @@ const work = () => {
     >
       <div className="container mx-auto font-primary">
         <div className="flex flex-col xl:flex-row xl:gap-[30px] xl:items-center">
-          <div className="w-full xl:w-[50%] flex flex-col xl:justify-center order-2 xl:order-none">
+          <div className="w-full xl:w-[50%] flex flex-col xl:justify-center order-1 xl:order-none">
             <div className="flex flex-col gap-[20px]">
               <div className="text-8xl leading-none font-extrabold text-outline">
                 {project.num}
@@ -189,7 +189,7 @@ const work = () => {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">
+          <div className="w-full xl:w-[50%] order-2 xl:order-none">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
