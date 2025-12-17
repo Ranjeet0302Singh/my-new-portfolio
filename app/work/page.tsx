@@ -21,94 +21,91 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "NextJs Full Stack ",
-    title: "Project 1",
+    category: "RepSet - Gym Management Platform",
+    title: "RepSet",
     description:
-      "An AI-driven image SaaS platform developed with Next.js, TypeScript, MongoDB, and several other modern technologies, offering advanced image processing features and a secure payment infrastructure.",
+      "A comprehensive, full-stack gym management platform built with Next.js, TypeScript, Prisma, tRPC, and Clerk authentication. Multi-tenant system that allows gym owners to manage facilities, members, staff, and operations with role-based access control.",
     stack: [
-      { name: "NextJs" },
-      { name: "Tailwind CSS" },
-      { name: "NodeJs" },
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "TypeScript" },
+      { name: "tRPC" },
+      { name: "Prisma" },
+      { name: "PostgreSQL" },
+      { name: "Clerk" },
+      { name: "Razorpay" },
+    ],
+    image: "/assets/work/thumb8.png",
+    live: "https://repset.in",
+    github: "https://github.com/Onezy-tech/repset",
+  },
+  {
+    num: "02",
+    category: "Onezy - Portfolio & Agency Website",
+    title: "Onezy",
+    description:
+      "A modern, full-stack portfolio and agency website designed to showcase services, projects, and professional expertise. Features stunning UI with 3D visualizations, advanced animations, admin dashboard, and comprehensive content management system.",
+    stack: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "TypeScript" },
+      { name: "Prisma" },
+      { name: "PostgreSQL" },
+      { name: "Clerk" },
+    ],
+    image: "/assets/work/thumb7.png",
+    live: "https://onezy.in/",
+    github: "https://github.com/Onezy-tech/Onezy",
+  },
+  {
+    num: "03",
+    category: "Imagica - AI Image SaaS Platform",
+    title: "Imagica",
+    description:
+      "An AI-driven image SaaS platform developed with Next.js, TypeScript, and MongoDB, offering advanced image processing features including AI-powered transformations, secure payment infrastructure, and comprehensive image management capabilities.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
       { name: "MongoDB" },
+      { name: "Node.js" },
+      { name: "Cloudinary AI" },
     ],
     image: "/assets/work/thumb1.png",
     live: "https://imagica.vercel.app/",
     github: "https://github.com/Ranjeet0302Singh/imagica-2",
   },
   {
-    num: "02",
-    category: "NextJs weather Forecast Site",
-    title: "Project 2",
-    description:
-      "A Next.js application that uses aceternity ui  and the OpenWeather API to provide current weather information based on the user’s location.",
-    stack: [
-      { name: "NextJs" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" },
-    ],
-    image: "/assets/work/thumb2.png",
-    live: "https://nextjs-weather-forecast-app.vercel.app/",
-    github: "https://github.com/Ranjeet0302Singh/weather-app",
-  },
-  {
-    num: "03",
-    category: "Sports Streaming Website",
-    title: "Project 3",
-    description:
-      "A React.js and PHP-based website providing real-time updates, live scores, and detailed match statistics.",
-    stack: [{ name: "ReactJs" }, { name: "Javascript" }, { name: "PHP" }],
-    image: "/assets/work/thumb3.png",
-    live: "https://thecricketbaadshah.com/",
-    github: "https://github.com/Ranjeet0302Singh/streaming-site",
-  },
-  {
     num: "04",
-    category: "Frontend Website",
-    title: "Project 4",
+    category: "MoviesVerse - Movie Platform",
+    title: "MoviesVerse",
     description:
-      "A website of the institute to showcase their work and experience",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb4.png",
-    live: "https://eduweb-ashy.vercel.app/",
-    github: "https://github.com/Ranjeet0302Singh/EDUWEB",
+      "A comprehensive movie recommendation platform built with React.js and Node.js, offering detailed movie information, ratings, reviews, and personalized recommendations. Features similar to IMDb with modern UI and seamless user experience.",
+    stack: [
+      { name: "React.js" },
+      { name: "JavaScript" },
+      { name: "Node.js" },
+      { name: "Express" },
+      { name: "REST API" },
+    ],
+    image: "/assets/work/thumb3.png",
+    live: "https://moviesverse-lemon.vercel.app/",
+    github: "https://github.com/Ranjeet0302Singh/moviesverse",
   },
   {
     num: "05",
-    category: "Tic Tac Toe Game",
-    title: "Project 5",
+    category: "EduWeb - Educational Institute Website",
+    title: "EduWeb",
     description:
-      "A website of the institute to showcase their work and experience",
-    stack: [{ name: "React" }, { name: "CSS" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb5.png",
-    live: "https://tic-tac-toe-psi-two-46.vercel.app/",
-    github: "https://github.com/Ranjeet0302Singh/tic-tac-toe",
-  },
-  {
-    num: "06",
-    category: "Textutils ",
-    title: "Project 6",
-    description:
-      "TextUtils is the site where you can do some experiments on the text based on your requirement",
-    stack: [{ name: "React" }, { name: "Bootstrap" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb6.png",
-    live: "https://textutils-reactjs-webapp.netlify.app/",
-    github: "https://github.com/Ranjeet0302Singh/textutils",
-  },
-  {
-    num: "07",
-    category: "Online Learning and Teaching Platform",
-    title: "Project 7",
-    description:
-      "Built using the MERN stack, featuring subscription-based access to video courses, secure payment gateways, and an intuitive user dashboard.",
+      "A professional educational institute website designed to showcase their work, experience, and services. Built with vanilla web technologies featuring responsive design and modern UI elements.",
     stack: [
-      { name: "React" },
-      { name: "NodeJs" },
-      { name: "ExpressJs" },
-      { name: "MongoDB" },
+      { name: "HTML5" },
+      { name: "CSS3" },
+      { name: "JavaScript" },
+      { name: "Responsive Design" },
     ],
-    image: "/assets/work/thumb7.png",
-    live: "https://github.com/Ranjeet0302Singh/edtech-frontend",
-    github: "https://github.com/Ranjeet0302Singh/edtech-backend",
+    image: "/assets/work/thumb4.png",
+    live: "https://eduweb-ashy.vercel.app/",
+    github: "https://github.com/Ranjeet0302Singh/EDUWEB",
   },
 ];
 
@@ -137,7 +134,7 @@ const work = () => {
               </div>
 
               <h2 className=" text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.category}
               </h2>
               <p className=" text-white/60">{project.description}</p>
 
@@ -208,7 +205,7 @@ const work = () => {
               })}
               <WorkSliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transtition-all"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
                 iconsStyles={""}
               />
             </Swiper>
