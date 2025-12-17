@@ -199,14 +199,13 @@ const work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="h-full">
-                    <div className="h-[300px] xl:h-[520px] relative group flex justify-center items-center bg-pink-50/20 rounded-xl overflow-hidden">
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                    <div className="h-[300px] xl:h-[520px] relative group flex justify-center items-center rounded-xl overflow-hidden">
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
                           alt={project.title}
                           fill
-                          className="object-cover"
+                          className="object-contain w-full"
                         />
                       </div>
                     </div>
