@@ -134,11 +134,11 @@ const work = () => {
         <div className="flex flex-col xl:flex-row xl:gap-[30px] xl:items-center">
           <div className="w-full xl:w-[50%] flex flex-col xl:justify-center order-1 xl:order-none">
             <div className="flex flex-col gap-[20px]">
-              <div className="text-8xl leading-none font-extrabold text-outline">
+              <div className="text-6xl xl:text-8xl leading-none font-extrabold text-outline">
                 {project.num}
               </div>
 
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[28px] xl:text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category}
               </h2>
               <p className="text-white/60 text-justify leading-relaxed">
