@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
 
 import {
   Tooltip,
@@ -121,6 +122,22 @@ const work = () => {
     setProject(projects[index]);
   };
 
+  const handlePrevProject = () => {
+    if (currentIndex > 0) {
+      const newIndex = currentIndex - 1;
+      setCurrentIndex(newIndex);
+      setProject(projects[newIndex]);
+    }
+  };
+
+  const handleNextProject = () => {
+    if (currentIndex < projects.length - 1) {
+      const newIndex = currentIndex + 1;
+      setCurrentIndex(newIndex);
+      setProject(projects[newIndex]);
+    }
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -156,40 +173,65 @@ const work = () => {
                 })}
               </ul>
               <div className="border border-white/20"></div>
-              <div className="flex items-center gap-4">
-                <Link href={project.live} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-accent transition-all">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-primary" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p className="bg-white text-black rounded px-2 py-1">
-                          View Live
-                        </p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+              <div className="flex items-center gap-4 justify-between xl:justify-start">
+                <div className="flex items-center gap-4">
+                  <Link href={project.live} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-accent transition-all">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-primary" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="bg-white text-black rounded px-2 py-1">
+                            View Live
+                          </p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
 
-                <Link href={project.github} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-accent transition-all">
-                        <BsGithub className="text-white text-3xl group-hover:text-primary" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p className="bg-white text-black rounded px-2 py-1">
-                          View Github
-                        </p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                  <Link href={project.github} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-accent transition-all">
+                          <BsGithub className="text-white text-3xl group-hover:text-primary" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="bg-white text-black rounded px-2 py-1">
+                            View Github
+                          </p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                </div>
+
+                <div className="xl:hidden flex gap-2">
+                  <button
+                    className={`bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all rounded-md ${
+                      currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
+                    }`}
+                    onClick={handlePrevProject}
+                    disabled={currentIndex === 0}
+                  >
+                    <PiCaretLeftBold />
+                  </button>
+                  <button
+                    className={`bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all rounded-md ${
+                      currentIndex === projects.length - 1
+                        ? "opacity-50 cursor-not-allowed"
+                        : ""
+                    }`}
+                    onClick={handleNextProject}
+                    disabled={currentIndex === projects.length - 1}
+                  >
+                    <PiCaretRightBold />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%] order-2 xl:order-none">
+          <div className="w-full xl:w-[50%] order-2 xl:order-none hidden xl:block">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
