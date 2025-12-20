@@ -62,10 +62,10 @@ const about = {
       fieldName: "Email",
       fieldValue: (
         <a
-          href="mailto:ranjeet843507@gmail.com"
+          href="mailto:ranjeetrawat.dev@gmail.com"
           className="text-blue-400 hover:underline"
         >
-          ranjeet843507@gmail.com
+          ranjeetrawat.dev@gmail.com
         </a>
       ),
     },
@@ -73,7 +73,7 @@ const about = {
       fieldName: "GitHub",
       fieldValue: (
         <a
-          href="https://github.com/Ranjeet0302Singh"
+          href="https://github.com/ranjeet-singh-rawat"
           target="_blank"
           className="text-blue-400 hover:text-blue-300"
         >

@@ -25,7 +25,7 @@ const Contact = () => {
             Reach out to me today and let&apos;s discuss how I can help you
             achieve your goals.
           </p>
-          <a href="mailto:ranjeet843507@gmail.com">
+          <a href="mailto:ranjeetrawat.dev@gmail.com">
             <MagicButton
               title="Let's get in touch"
               icon={<FaLocationArrow />}

@@ -73,7 +73,7 @@ const projects = [
     ],
     image: "/assets/work/thumb1.png",
     live: "https://imagica.vercel.app/",
-    github: "https://github.com/Ranjeet0302Singh/imagica-2",
+    github: "https://github.com/ranjeet-singh-rawat/imagica-2",
   },
   {
     num: "04",
@@ -90,7 +90,7 @@ const projects = [
     ],
     image: "/assets/work/thumb3.png",
     live: "https://moviesverse-lemon.vercel.app/",
-    github: "https://github.com/Ranjeet0302Singh/moviesverse",
+    github: "https://github.com/ranjeet-singh-rawat/moviesverse",
   },
   {
     num: "05",
@@ -106,7 +106,7 @@ const projects = [
     ],
     image: "/assets/work/thumb4.png",
     live: "https://eduweb-ashy.vercel.app/",
-    github: "https://github.com/Ranjeet0302Singh/EDUWEB",
+    github: "https://github.com/ranjeet-singh-rawat/EDUWEB",
   },
 ];
 
