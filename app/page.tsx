@@ -10,7 +10,7 @@ const Home = () => {
       // Create a new anchor element
       const link = document.createElement("a");
       // Set the href attribute to the file URL
-      link.href = "https://drive.google.com/drive/folders/1uSxN677EHO6PBtzLf8zThpKWhxH4xjM0?usp=sharing";
+      link.href = "https://drive.google.com/file/d/1iMFogH66HaZGIaBm9m8dRjtIx5mAl47e/view?usp=sharing";
       // Set the download attribute to specify the file name
       link.download = "Ranjeet_Singh_Resume.pdf";
       // Programmatically click the link to trigger the download
